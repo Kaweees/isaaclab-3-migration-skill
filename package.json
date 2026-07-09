@@ -1,0 +1,30 @@
+{
+  "name": "isaaclab-3-migration-skill",
+  "version": "0.1.0",
+  "description": "Claude Code skill for migrating Isaac Lab projects to Isaac Lab 3.x",
+  "keywords": [
+    "claude-code",
+    "claude",
+    "skill",
+    "isaaclab",
+    "isaac-sim",
+    "migration"
+  ],
+  "license": "MIT",
+  "author": "Miguel Villa Floran",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaweees/isaaclab-3-migration-skill.git"
+  },
+  "bin": {
+    "isaaclab-3-migration-skill": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
