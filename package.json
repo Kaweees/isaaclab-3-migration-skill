@@ -1,10 +1,15 @@
 {
   "name": "isaaclab-3-migration-skill",
-  "version": "0.1.0",
-  "description": "Claude Code skill for migrating Isaac Lab projects to Isaac Lab 3.x",
+  "version": "0.2.0",
+  "description": "Portable Agent Skill for migrating Isaac Lab projects to Isaac Lab 3.x",
   "keywords": [
+    "agent-skills",
+    "coding-agents",
     "claude-code",
-    "claude",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
     "skill",
     "isaaclab",
     "isaac-sim",
@@ -19,6 +24,9 @@
   "bin": {
     "isaaclab-3-migration-skill": "bin/install.js"
   },
+  "scripts": {
+    "validate": "node --check bin/install.js && skills add . --list"
+  },
   "files": [
     "bin/",
     "skills/",
@@ -26,5 +34,8 @@
   ],
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "skills": "1.5.17"
   }
 }
